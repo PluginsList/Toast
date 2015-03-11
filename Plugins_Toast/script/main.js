@@ -6,33 +6,32 @@
         
         shorttop:function()
         {
-          alert("Short Top");  
-            window.plugins.toast.showShortTop('Your changes have been saved', this.onSuccess, this.onError);
+            window.plugins.toast.show('Message should be show on the top','short','top', this.onSuccess, this.onError);
         },
         
         shortcenter:function()
         {
-          alert("shortcenter");  
+          window.plugins.toast.show("Message should be show on the Center","short","center",this.onSuccess,this.onError); 
         },
         
         shortbottom:function()
         {
-          alert("shortbottom");  
+          window.plugins.toast.show("Message should be show on the Bottom","short","bottom",this.onSuccess,this.onError);  
         },
         
         longtop:function()
         {
-          alert("longtop ");  
+          window.plugins.toast.show("Message should be show on the Top in Long Amount","long","top",this.onSuccess,this.onError);  
         },
         
         longcenter:function()
         {
-          alert("longcenter Top");  
+          window.plugins.toast.show("Message should be show on the Center in Long Amount","long","center",this.onSuccess,this.onError);  
         },
         
         longbottom:function()
         {
-          alert("longbottom Top");  
+          window.plugins.toast.show("Message should be show on the Bottom in Long Amount","long","bottom",this.onSuccess,this.onError);  
         },
         
         onSuccess: function(msg) {
