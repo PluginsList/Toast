@@ -8,9 +8,34 @@
     <script src="cordova.js"></script>
     <script src="kendo/js/jquery.min.js"></script>
     <script src="kendo/js/kendo.mobile.min.js"></script>
-    
+    <script src="script/app.js"></script>
+    <script src="script/main.js"></script>
 </head>
 <body>
-    
+    <div data-role="view" data-model="app.toastService.viewModel">
+        <div data-role="content">
+            <div style="width:90%;height:auto;margin:0px auto;margin-top:50px;">
+                <p>
+                    <a data-role="button" data-bind="click:shorttop" style="width:100%">Toast on Short TOP</a>
+                </p>
+                <p>
+                    <a data-role="button" data-bind="click:shortcenter" style="width:100%">Toast on Short Center</a>    
+                </p>
+                <p>
+                    <a data-role="button" data-bind="click:shortbottom" style="width:100%">Toast on Short Bottom</a>    
+                </p>
+                <p>
+                    <a data-role="button" data-bind="click:longtop" style="width:100%">Toast on Long TOP</a>    
+                </p>
+                <p>
+                    <a data-role="button" data-bind="click:longcenter" style="width:100%">Toast on Long Center</a>    
+                </p>
+                <p>
+                    <a data-role="button" data-bind="click:longbottom" style="width:100%">Toast on Long Bottom</a>    
+                </p>
+                
+            </div>
+        </div>
+    </div>
 </body>
 </html>
